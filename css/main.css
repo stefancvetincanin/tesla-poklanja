@@ -41,6 +41,10 @@ html {
   scroll-behavior: smooth;
 }
 
+input[type=date] {
+  padding-bottom: 10px;
+}
+
 /* Back to top */
 
 /* .back-to-top {
