@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>TESLA Giveaway</title>
+  <title>Tesla Giveaway</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- jQuery -->
   <script src="bootstrap/jquery-3.3.1.min.js"></script>
@@ -17,6 +17,8 @@
   <script src='https://www.google.com/recaptcha/api.js'></script>
   <!-- FONTS -->
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <!-- Our sources -->
   <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
 </head>
@@ -26,7 +28,7 @@
     <section class="section1">
       <header>
         <nav class="navbar navbar-expand-lg">
-          <a class="navbar-brand" href="#"><img src="media/images/Tesla-logo.png" alt="Brand logo"></a>
+          <a class="navbar-brand" href="index.html"><img src="media/images/Tesla-logo.png" alt="Brand logo"></a>
           <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -35,10 +37,10 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="#">LINK 1<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="smartphone.html">LINK 1<span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">LINK 2</a>
+                <a class="nav-link" href="tablet.html">LINK 2</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">LINK 3</a>
@@ -54,13 +56,16 @@
           <img src="media/images/sto-da-ne-naslov.png" alt="Giveaway logo">
           <p class="section1-p">Budite medju prvih 100 kupaca Tesla Smartphone-a<br>9.2, jer na poklon dobijate Tesla Tablet L7.1!</p>
           <p class="font-weight-bold">Dva uredjaja po ceni jednog - pa ŠTO da ne?</p>
-          <button class="section1-btn">SMARTPHONE 9.2</button>
+          <a href="smartphone.html">
+            <button class="section1-btn">SMARTPHONE 9.2</button>
+          </a>
         </div>
         <div class="section1-slider">
           <img src="media/images/Telefon-tablet-slider.png" alt="">
         </div>
       </div>
     </section>
+
     <section class="section2">
       <h3>OSTAVI SVOJE PODATKE</h3>
       <hr>
@@ -69,7 +74,7 @@
           <div class="form-sub">
             <div class="date-container">
               <label for="date" id="lbl-date">Dan i datum</label>
-              <input type="date" id="date">
+              <input type="date" id="date" min="1900-01-01" max="2010-01-31">
             </div>
             <input type="email" placeholder="E-Mail">
             <div class="captcha-container">
@@ -77,13 +82,23 @@
             </div>
           </div>
           <div class="form-sub">
-            <input type="text" placeholder="IMEI">
-            <textarea name="" id="" cols="30" rows="6" placeholder="Komentar"></textarea>
+            <div class="imei-container">
+              <input type="text" placeholder="IMEI" id="imei">
+              <div class="pomoc" title='IMEI broj ce se pojaviti na ekranu posto unesete "*#06#"' data-toggle="tooltip" data-placement="bottom">
+                <i class="fas fa-question-circle"></i>
+                <label>POMOC</label>
+              </div>
+            </div>
+            <textarea name="komentar" id="komentar" cols="30" rows="6" placeholder="Komentar"></textarea>
           </div>
         </div>
         <button>POŠALJI</button>
       </form>
     </section>
+
+    <!-- <div class="back-to-top">
+
+    </div> -->
   </main>
 
   <script src="js/main.js"></script>
