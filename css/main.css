@@ -103,6 +103,14 @@ html {
     margin: -50px 0;
 }
 
+.section1-specs {
+  margin-top: 75px;
+}
+
+.navbar-nav .active {
+  text-decoration: underline;
+}
+
 /* SECTION 2 */
 
 .section2 {
@@ -203,6 +211,18 @@ form {
   color: white;
   opacity: 0.8;
   border-color: #4e4d77;
+}
+
+/* Table of specs */
+
+.section1-blurb .specs-icon {
+  width: 50px;
+}
+
+td {
+  height: 50px;
+  padding-right: 15px;
+  border-bottom: 1px solid white;
 }
 
 @media screen and (max-width: 1199px) {
