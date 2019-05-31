@@ -33,7 +33,6 @@ input, textarea {
 }
 
 input::placeholder, textarea::placeholder {
-  color: white;
   font-weight: 300;
   color: rgb(225, 224, 243);
 }
@@ -134,6 +133,20 @@ form {
   justify-content: flex-end;
 }
 
+.date-container {
+  position: relative;
+}
+
+.date-container label {
+  position: absolute;
+  background: #01025e;
+  padding: 5px 10px;
+  left: 11px;
+  top: 22px;
+  font-weight: 300;
+  color: rgb(225, 224, 243);
+}
+
 @media screen and (max-width: 1199px) {
     .section1-content {
         flex-direction: column;
@@ -199,5 +212,19 @@ form {
   .section1-slider img {
       width: 400px;
       margin: -20px 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .section1-slider img {
+    width: 290px;
+  }
+
+  .section1-content h4 {
+    font-size: 17px;
+  }
+
+  .section2 h3 {
+    font-size: 22px;
   }
 }
