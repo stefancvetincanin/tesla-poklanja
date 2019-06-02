@@ -18,19 +18,20 @@
   <!-- FONTS -->
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <!-- Our sources -->
   <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
 </head>
 
 <body>
   <main>
-    <section class="section1">
+    <section class="section1" id="main-section">
       <header>
         <nav class="navbar navbar-expand-lg">
           <a class="navbar-brand" href="index.html"><img src="media/images/Tesla-logo.png" alt="Brand logo"></a>
-          <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
 
@@ -54,7 +55,8 @@
         <div class="section1-blurb">
           <h4>Gratis tablet za prvih 100</h4>
           <img src="media/images/sto-da-ne-naslov.png" alt="Giveaway logo">
-          <p class="section1-p">Budite medju prvih 100 kupaca Tesla Smartphone-a<br>9.2, jer na poklon dobijate Tesla Tablet L7.1!</p>
+          <p class="section1-p">Budite medju prvih 100 kupaca Tesla Smartphone-a<br>9.2, jer na poklon dobijate Tesla
+            Tablet L7.1!</p>
           <p class="font-weight-bold">Dva uredjaja po ceni jednog - pa ŠTO da ne?</p>
           <a href="smartphone.html">
             <button class="section1-btn">SMARTPHONE 9.2</button>
@@ -64,9 +66,19 @@
           <img src="media/images/Telefon-tablet-slider.png" alt="">
         </div>
       </div>
+      <div class="nav-btn-container">
+        <a href="#form-section">
+          <i class="fas fa-angle-double-down"></i>
+        </a>
+      </div>
     </section>
 
-    <section class="section2">
+    <section class="section2" id="form-section">
+      <div class="nav-btn-container">
+        <a href="#main-section">
+          <i class="fas fa-angle-double-up"></i>
+        </a>
+      </div>
       <h3>OSTAVI SVOJE PODATKE</h3>
       <hr>
       <form id="contact-form">
@@ -78,13 +90,14 @@
             </div>
             <input type="email" placeholder="E-Mail">
             <div class="captcha-container">
-              <div class="g-recaptcha" data-sitekey="6LcePAATAAAAAGPRWgx90814DTjgt5sXnNbV5WaW"></div>
+              <div class="g-recaptcha" data-sitekey="6LcePAATAAAAAGPRWgx90814DTjgt5sXnNbV5WaW" data-theme="dark"></div>
             </div>
           </div>
           <div class="form-sub">
             <div class="imei-container">
               <input type="text" placeholder="IMEI" id="imei">
-              <div class="pomoc" title='IMEI broj ce se pojaviti na ekranu posto unesete "*#06#"' data-toggle="tooltip" data-placement="bottom">
+              <div class="pomoc" title='IMEI broj ce se pojaviti na ekranu posto unesete "*#06#"' data-toggle="tooltip"
+                data-placement="bottom">
                 <i class="fas fa-question-circle"></i>
                 <label>POMOC</label>
               </div>
@@ -95,10 +108,6 @@
         <button>POŠALJI</button>
       </form>
     </section>
-
-    <!-- <div class="back-to-top">
-
-    </div> -->
   </main>
 
   <script src="js/main.js"></script>

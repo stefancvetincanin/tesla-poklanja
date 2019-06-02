@@ -45,25 +45,13 @@ input[type=date] {
   padding-bottom: 10px;
 }
 
-/* Back to top */
-
-/* .back-to-top {
-  position: fixed;
-  bottom: 15px;
-  right: 15px;
-  display: inline-block;
-  height: 50px;
-  width: 50px;
-  background: white;
-  cursor: pointer;
-} */
-
 /* SECTION 1 */
 
 .section1 {
     height: 100vh;
     background: url("../media/images/Tesla-9.2+poklon-tablet.jpg") no-repeat;
     background-size: cover;
+    overflow: hidden;
 }
 
 .nav-link {
@@ -115,23 +103,43 @@ input[type=date] {
   text-decoration: underline;
 }
 
+.nav-btn-container {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+.nav-btn-container i {
+  font-size: 2em;
+  animation-name: arrows-btn;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+}
+
+@keyframes arrows-btn {
+  0% {opacity: 0.5;}
+  50% {opacity: 1;}
+  100% {opacity: 0.5;}
+}
+
 /* SECTION 2 */
 
 .section2 {
-    padding: 80px 0;
-    background: #000139;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  padding: 0 0 80px;
+  background: #000139;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
 }
 
 .section2 h3 {
-    font-weight: 900;
+  font-weight: 900;
 }
 
 .section2 hr {
-    border-top: 4px solid #515eff;
-    width: 80px;
+  border-top: 4px solid #515eff;
+  width: 80px;
 }
 
 /* FORM STYLING */
@@ -254,6 +262,10 @@ td {
   }
   .form-sub {
     margin-bottom: 0;
+  }
+
+  .section2 {
+    height: auto;
   }
 }
 
