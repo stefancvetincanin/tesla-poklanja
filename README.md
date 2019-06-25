@@ -1,2 +1,3 @@
 # tesla-poklanja
-COMTRADE internship first assignment
+COMTRADE internship warmup assignment<br>
+Built using jQuery and Bootstrap
